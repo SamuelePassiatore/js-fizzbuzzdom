@@ -1,6 +1,10 @@
 /* Custom properties */
 :root {
-
+--petrol: #083B4C;
+--light-blue: #1389B2;
+--green: #0CD6A1;
+--yellow: #FFD166;
+--red: #F0466F;
 }
 
 /* Generics */
@@ -8,4 +12,41 @@ body {
   font-family: sans-serif;
 }
 
+h1 {
+  font-size: 55px;
+}
+
 /* Utils */
+.bg-custom-petrol {
+  background-color: var(--petrol);
+}
+
+.bg-custom-light-blue {
+  background-color: var(--light-blue);
+}
+
+.bg-custom-green {
+  background-color: var(--green);
+}
+
+.bg-custom-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-custom-red {
+  background-color: var(--red);
+}
+
+#element > div {
+  height: 80px;
+  width: 80px;
+  margin: 5px;
+  line-height: 80px;
+  border: 3px solid transparent;
+}
+
+#element > div:hover {
+border: 3px solid white;
+cursor: pointer;
+}
+
