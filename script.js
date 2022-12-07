@@ -15,8 +15,33 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz” al posto 
 */
 
 // 1 - Prendo gli elementi in pagina.
+let fizz = document.getElementById('fizz');
+let buzz = document.getElementById('buzz');
+let fizzBuzz = document.getElementById('fizz-buzz');
 
 // 2 - Creo un ciclo in console con i numeri da 1 a 100.
+fizz = 'fizz';
+buzz = 'buzz';
+fizzBuzz = 'fizz-buzz'
+
 for (let i = 1; i <= 100; i++){
     console.log(i);
+
+    if (i % 3 === 0) {
+        console.log (fizz);
+    } 
+
+    if (i % 5 === 0) {
+        console.log (buzz);
+    }
+
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log (fizzBuzz);
+    }
 }
+
+
+
+
+
+
